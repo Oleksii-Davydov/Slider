@@ -27,7 +27,11 @@
         }
         .position_btn {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+        }
+
+        .btn_Prev {
+            display: none;
         }
 
     </style>
@@ -37,7 +41,7 @@
     <img id="change_image" src=images/1.jpg >
     <div class="position_btn">
         <button onclick="Prev()" class="button  btn_Prev">Prev</button>
-        <button onclick="Next()" class="button" style="float: right;">Next</button>
+        <button onclick="Next()" class="button btn_Next" >Next</button>
     </div>
 </div>
 

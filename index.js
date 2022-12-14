@@ -3,23 +3,20 @@ let arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 function Next() {
     theNum++;
-    if (theNum == arr.length) {
-        theNum = "0";
+    document.querySelector(".btn_Prev").style.display = 'block';
+    if (theNum + 1 == arr.length) {
+        document.querySelector(".btn_Next").style.display = 'none';
     }
     change_image.src = 'images/' + arr[theNum] + '.jpg';
-}
-
-function HideNext() {
-    if (arr.length = 9) {
-        document.querySelector(".btn_Prev").style.display = 'none'
-    }
 }
 
 function Prev() {
     theNum--;
-    if (theNum == "-1") {
-        theNum = arr.length - 1;
+    document.querySelector(".btn_Next").style.display = 'block';
+    if (theNum == 0) {
+        document.querySelector(".btn_Prev").style.display = 'none';
     }
-    console.log(theNum);
     change_image.src = 'images/' + arr[theNum] + '.jpg';
 }
+
+
