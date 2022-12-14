@@ -11,7 +11,7 @@ function Next() {
 
 function HideNext() {
     if (arr.length = 9) {
-
+        document.querySelector(".btn_Prev").style.display = 'none'
     }
 }
 
